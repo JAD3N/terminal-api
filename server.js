@@ -18,7 +18,7 @@ function escape(s) {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res) => res.sendfile('./public/index.html'));
+app.get('/', (req, res) => res.sendFile('./public/index.html'));
 app.post('/contact', (req, res) => {
 	const {
 		name,
