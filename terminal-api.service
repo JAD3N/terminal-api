@@ -4,7 +4,7 @@
 Description=Terminal API
 
 [Service]
-ExecStart=/usr/bin/yarn start:prod
+ExecStart=/usr/bin/yarn start
 WorkingDirectory=/opt/terminal-api
 Restart=always
 # Restart service after 10 seconds if node service crashes
