@@ -1,0 +1,19 @@
+# Add this file to: /etc/systemd/system/terminal-api.service
+
+[Unit]
+Description=Terminal API
+
+[Service]
+ExecStart=/usr/bin/yarn start:prod
+WorkingDirectory=/opt/terminal-api
+Restart=always
+# Restart service after 10 seconds if node service crashes
+RestartSec=10
+# Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=terminal-api
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

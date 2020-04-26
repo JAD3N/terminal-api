@@ -1,0 +1,13 @@
+{
+  "name": "terminal-api",
+  "version": "0.0.1",
+  "main": "server.js",
+  "repository": "https://github.com/jad3n/terminal-api.git",
+  "author": "Jaden Buchan",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.6"
+  }
+}
