@@ -33,11 +33,11 @@ app.post('/contact', (req, res) => {
 	} else {
 		const html = `
 			<b>Name:</b> ${escape(name)}<br/>
-			<b>Email:</b> ${escape(name)}<br/>
+			<b>Email:</b> ${escape(email)}<br/>
 			${!!phone ?
-				`<b>Phone:</b> ${escape(name)}<br/>`
+				`<b>Phone:</b> ${escape(phone)}<br/>`
 			: ''}
-			<b>Message:</b> ${escape(name)}<br/>
+			<b>Message:</b> ${escape(message)}<br/>
 		`;
 
 		const mailOptions = {
