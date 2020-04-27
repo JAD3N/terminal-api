@@ -43,6 +43,7 @@ app.post('/contact', (req, res) => {
 		const mailOptions = {
 			to: settings.email,
 			subject: settings.subject,
+			from: settings.from,
 			html,
 		};
 
